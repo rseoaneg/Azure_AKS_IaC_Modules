@@ -1,5 +1,5 @@
 #Vnet
-vnet_name = "VNET-retail-dev"
+vnet_name = "VNET-TEST_NONPRODUCTION"
 resource_group_name = "rg-common-test-networking-nonprod"
 resource_group_name_common = "RG-COMMON-NETWORKING-AZDNS"
 location = "westeurope"
@@ -9,47 +9,47 @@ tags = {}
 #Subnets
 subnets = {
     "subnet01" = {
-        name              = "VNET-retail-SNET-COMMON_dev"
+        name              = "VNET-TEST-NONPRODUCTION-SNET-libre01"
         address_prefixes  = ["10.142.0.0/27"]
         enforce           = true
     },
     "subnet02" = {
-        name              = "VNET-retail-platformx-SNET-IT-TOOLS_dev"
+        name              = "VNET-TEST-NONPRODUCTION-SNET-libre02"
         address_prefixes  = ["10.142.0.32/27"]
         enforce           = true
     },
     "subnet03" = {
-        name              = "VNET-retail-platformx-SNET-AKS_dev"
+        name              = "VNET-TEST-NONPRODUCTION-SNET-libre03"
         address_prefixes  = ["10.142.0.96/27"]
         enforce           = true
     },
     "subnet05" = {
-        name              = "VNET-retail-platformx-SNET-STORAGE_dev"
+        name              = "VNET-TEST-NONPRODUCTION-SNET-DATABASES"
         address_prefixes  = ["10.142.0.192/27"]
         enforce           = true
     },
     "subnet06" = {
-        name              = "VNET-retail-platformx-SNET-REDIS_dev"
+        name              = "VNET-TEST-NONPRODUCTION-SNET-POSTGRESQL"
         address_prefixes  = ["10.142.0.64/27"]
         enforce           = true
     },
     "subnet07" = {
-        name              = "VNET-retail-platformy-SNET-IT-TOOLS_dev"
+        name              = "VNET-TEST-NONPRODUCTION-SNET-IT_TOOLS"
         address_prefixes  = ["10.142.1.0/27"]
         enforce           = true
     },
     "subnet08" = {
-        name              = "VNET-retail-platformy-SNET-AKS_dev"
+        name              = "VNET-TEST-NONPRODUCTION-SNET-AKS-platformx-dev"
         address_prefixes  = ["10.142.1.32/27"]
         enforce           = true
     },
     "subnet09" = {
-        name              = "VNET-retail-platformy-SNET-STORAGE_dev"
+        name              = "VNET-TEST-NONPRODUCTION-SNET-AKS-platformy-dev"
         address_prefixes  = ["10.142.1.64/27"]
         enforce           = true
     },
     "subnet10" = {
-        name              = "VNET-retail-platformy-SNET-REDIS_dev"
+        name              = "VNET-TEST-NONPRODUCTION-SNET-AKS-platformz-dev"
         address_prefixes  = ["10.142.1.96/27"]
         enforce           = true
     }
