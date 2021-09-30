@@ -88,28 +88,28 @@ resource "azurerm_private_dns_zone" "private_dns_postgre" {
 #Private DNS zones virtual network links
 resource "azurerm_private_dns_zone_virtual_network_link" "vnl_acr" {
   name                  = "linkacr"
-  resource_group_name   = var.resource_group_name
+  resource_group_name   = var.resource_group_name_common
   private_dns_zone_name = azurerm_private_dns_zone.private_dns_acr.name
   virtual_network_id    = azurerm_virtual_network.vnet.id
 }
 
 resource "azurerm_private_dns_zone_virtual_network_link" "vnl_file" {
   name                  = "linkfile"
-  resource_group_name   = var.resource_group_name
+  resource_group_name   = var.resource_group_name_common
   private_dns_zone_name = azurerm_private_dns_zone.private_dns_file.name
   virtual_network_id    = azurerm_virtual_network.vnet.id
 }
 
 resource "azurerm_private_dns_zone_virtual_network_link" "vnl_vault" {
   name                  = "linkvault"
-  resource_group_name   = var.resource_group_name
+  resource_group_name   = var.resource_group_name_common
   private_dns_zone_name = azurerm_private_dns_zone.private_dns_vault.name
   virtual_network_id    = azurerm_virtual_network.vnet.id
 }
 
 resource "azurerm_private_dns_zone_virtual_network_link" "vnl_postgre" {
   name                  = "linkpostgre"
-  resource_group_name   = var.resource_group_name
+  resource_group_name   = var.resource_group_name_common
   private_dns_zone_name = azurerm_private_dns_zone.private_dns_postgre.name
   virtual_network_id    = azurerm_virtual_network.vnet.id
 }
