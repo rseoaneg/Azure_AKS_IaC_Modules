@@ -1,5 +1,5 @@
 #Vnet
-vnet_name = "VNET-TEST_NONPRODUCTION"
+vnet_name = "VNET-TEST-NONPRODUCTION"
 resource_group_name = "rg-common-test-networking-nonprod"
 resource_group_name_common = "RG-COMMON-NETWORKING-AZDNS"
 location = "westeurope"
