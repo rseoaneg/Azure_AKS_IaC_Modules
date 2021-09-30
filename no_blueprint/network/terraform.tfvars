@@ -1,6 +1,7 @@
 #Vnet
 vnet_name = "VNET-retail-dev"
 resource_group_name = "rg-common-test-networking-nonprod"
+resource_group_name_common = "RG-COMMON-NETWORKING-AZDNS"
 location = "westeurope"
 address_space = ["10.142.0.0/24", "10.142.1.0/24"]
 tags = {}

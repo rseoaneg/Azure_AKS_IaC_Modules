@@ -67,22 +67,22 @@ resource "azurerm_subnet" "postgre_flexible_subnets" {
 #Private DNS zones
 resource "azurerm_private_dns_zone" "private_dns_acr" {
   name                = "privatelink.azurecr.io"
-  resource_group_name = var.resource_group_name
+  resource_group_name = var.resource_group_name_common
 }
 
 resource "azurerm_private_dns_zone" "private_dns_file" {
   name                = "privatelink.file.core.windows.net"
-  resource_group_name = var.resource_group_name
+  resource_group_name = var.resource_group_name_common
 }
 
 resource "azurerm_private_dns_zone" "private_dns_vault" {
   name                = "privatelink.vaultcore.azure.net"
-  resource_group_name = var.resource_group_name
+  resource_group_name = var.resource_group_name_common
 }
 
 resource "azurerm_private_dns_zone" "private_dns_postgre" {
   name                = "ddbb.private.postgres.database.azure.com"
-  resource_group_name = var.resource_group_name
+  resource_group_name = var.resource_group_name_common
 }
 
 #Private DNS zones virtual network links
