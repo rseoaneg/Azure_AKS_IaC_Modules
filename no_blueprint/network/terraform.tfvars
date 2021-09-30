@@ -58,19 +58,19 @@ subnets = {
 #Postgre flexible subnet
 postgre_flexible_subnets = {
     "critical01" = {
-        name             = "VNET-retail-platformx-SNET-POSTGRESQL_CRITICAL_dev"
+        name             = "VNET-TEST-NONPRODUCTION-platformx-SNET-POSTGRESQL_CRITICAL"
         address_prefixes = ["10.142.0.128/27"]
     },
     "non-critical01" = {
-        name             = "VNET-retail-platformx-SNET-POSTGRESQL_NON_CRITICAL_dev"
+        name             = "VNET-TEST-NONPRODUCTION-platformx-SNET-POSTGRESQL_NON_CRITICAL"
         address_prefixes = ["10.142.0.160/27"]
     },
     "critical02" = {
-        name             = "VNET-retail-platformy-SNET-POSTGRESQL_CRITICAL_dev"
+        name             = "VNET-TEST-NONPRODUCTION-platformy-SNET-POSTGRESQL_CRITICAL"
         address_prefixes = ["10.142.1.128/27"]
     },
     "non-critical02" = {
-        name             = "VNET-retail-platformy-SNET-POSTGRESQL_NON_CRITICAL_dev"
+        name             = "VNET-TEST-NONPRODUCTION-platformy-SNET-POSTGRESQL_NON_CRITICAL_"
         address_prefixes = ["10.142.1.160/27"]
     }
 }
